@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Policies | Lesotho HR Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-mountain-sun"></i>
+      <span>Lesotho HR Portal</span>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Company Culture</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="training.html">Training</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1600'); min-height: 35vh;">
+    <div class="hero-content">
+      <h1>Internal Policies</h1>
+      <p>Guidelines that shape our workplace</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="policy-card" style="max-width: 100%; text-align: left;">
+        <i class="fas fa-gavel"></i>
+        <h3 id="ethics">Code of Conduct</h3>
+        <p>Our commitment to ethics, respect, and integrity. All employees must adhere to the highest standards of professional behavior, including anti-corruption, confidentiality, and respect for diversity.</p>
+      </div>
+
+      <div class="policy-card" style="max-width: 100%; text-align: left; margin-top:1.5rem;">
+        <i class="fas fa-calendar-alt"></i>
+        <h3 id="leave">Leave Policy</h3>
+        <p>Annual leave: 21 working days per year. Sick leave: 30 days per cycle (fully paid). Family responsibility leave: 5 days per year. Maternity/Paternity leave as per Lesotho Labour Code.</p>
+      </div>
+
+      <div class="policy-card" style="max-width: 100%; text-align: left; margin-top:1.5rem;">
+        <i class="fas fa-shield-alt"></i>
+        <h3 id="data">Data Privacy & IT Usage</h3>
+        <p>Protecting employee and company data is paramount. Use of company devices must comply with IT security guidelines. Personal data is processed in accordance with the Data Protection Act.</p>
+      </div>
+
+      <div class="policy-card" style="max-width: 100%; text-align: left; margin-top:1.5rem;">
+        <i class="fas fa-chalkboard"></i>
+        <h3>Training & Development Policy</h3>
+        <p>Employees are entitled to 5 training days per year. Sponsorship for accredited programs is subject to approval and retention agreement.</p>
+      </div>
+
+      <div class="info-text" style="text-align:center; margin-top:2rem;">
+        <p>For full policy documents, contact HR at <strong>hr@lesothohr.co.ls</strong></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>HR Portal</h4>
+      <p>Supporting Lesotho’s workforce with transparency and growth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Job Vacancies</a></li>
+        <li><a href="training.html">HR Training Video</a></li>
+        <li><a href="policies.html">Internal Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="policies.html#leave">Leave Policy</a></li>
+        <li><a href="policies.html#ethics">Code of Conduct</a></li>
+        <li><a href="policies.html#data">Data Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +26662499625</p>
+      <p><i class="fas fa-envelope"></i> hr@lesothohr.co.ls</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2026 Moshoeshoe HR Holdings – Lesotho | Empowering Basotho excellence</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if(toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  }
+</script>
+</body>
+</html>

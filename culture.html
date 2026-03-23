@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Culture | Lesotho HR Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-mountain-sun"></i>
+      <span>Lesotho HR Portal</span>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html" class="active">Company Culture</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="training.html">Training</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Basotho.jpg'); min-height: 40vh;">
+    <div class="hero-content">
+      <h1>Our Culture</h1>
+      <p>Collaboration, Ubuntu, and Innovation</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="two-columns">
+        <div>
+          <img src="BASOTHO WORK.jpg" alt="Team meeting in Lesotho" style="width:100%; border-radius:1rem;">
+        </div>
+        <div>
+          <h2>Basotho Values at Work</h2>
+          <p>We embrace <strong>Botho</strong> (humanity) and respect for all. Our open‑door policy, mentorship programs, and community engagement reflect our commitment to a supportive work environment.</p>
+          <p>Regular cultural events, heritage celebrations, and flexible work arrangements make us one of Lesotho’s best employers.</p>
+          <a href="careers.html" class="btn-outline">Join our family</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Employees Say</h2>
+      </div>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <img src="seven.jpg " alt="Employee testimonial">
+          <h3>Refiloe M.</h3>
+          <p>"A workplace where I truly belong. They respect my growth and my roots."</p>
+        </div>
+        <div class="staff-card">
+          <img src="Lebohang T.jpg" alt="Employee testimonial">
+          <h3>Lebohang T.</h3>
+          <p>"The culture here is like a second family. Very inclusive and forward-thinking."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>HR Portal</h4>
+      <p>Supporting Lesotho’s workforce with transparency and growth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Job Vacancies</a></li>
+        <li><a href="training.html">HR Training Video</a></li>
+        <li><a href="policies.html">Internal Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="policies.html#leave">Leave Policy</a></li>
+        <li><a href="policies.html#ethics">Code of Conduct</a></li>
+        <li><a href="policies.html#data">Data Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +266 62499625</p>
+      <p><i class="fas fa-envelope"></i> hr@lesothohr.co.ls</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2026 Moshoeshoe HR Holdings – Lesotho | Empowering Basotho excellence</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if(toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  }
+</script>
+</body>
+</html>

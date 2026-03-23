@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training & Development | Lesotho HR Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-mountain-sun"></i>
+      <span>Lesotho HR Portal</span>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Company Culture</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="training.html" class="active">Training</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('basotho culture.jpg');">
+    <div class="hero-content">
+      <h1>Training & Development</h1>
+      <p>Grow with us through continuous learning</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured HR Training Video</h2>
+        <p>Watch our latest session on "Effective Leadership in the Modern Workplace"</p>
+      </div>
+      <div class="video-container">
+        <!-- Embedded HR training video (professional HR leadership course) -->
+        <iframe width="480" height="720" src="video.mp4" title="HR Training Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="two-columns" style="margin-top:3rem;">
+        <div>
+          <h3>Upcoming Workshops</h3>
+          <ul>
+            <li>🔹 Leadership Essentials – May 12, 2026</li>
+            <li>🔹 Digital Transformation for HR – June 5, 2026</li>
+            <li>🔹 Conflict Resolution – June 20, 2026</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Development Programs</h3>
+          <p>We support professional certifications (CIPD, SHRM, project management) and offer mentorship with senior leaders.</p>
+          <a href="policies.html" class="btn-outline">View Learning Policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>HR Portal</h4>
+      <p>Supporting Lesotho’s workforce with transparency and growth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Job Vacancies</a></li>
+        <li><a href="training.html">HR Training Video</a></li>
+        <li><a href="policies.html">Internal Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="policies.html#leave">Leave Policy</a></li>
+        <li><a href="policies.html#ethics">Code of Conduct</a></li>
+        <li><a href="policies.html#data">Data Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +266 2231 2345</p>
+      <p><i class="fas fa-envelope"></i> hr@lesothohr.co.ls</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2026 Moshoeshoe HR Holdings – Lesotho | Empowering Basotho excellence</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if(toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  }
+</script>
+</body>
+</html>

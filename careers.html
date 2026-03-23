@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Lesotho HR Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <i class="fas fa-mountain-sun"></i>
+      <span>Lesotho HR Portal</span>
+    </div>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Company Culture</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="training.html">Training</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(BASOTHO\ WORK.jpg); min-height: 40vh;">
+    <div class="hero-content">
+      <h1>Join Our Team</h1>
+      <p>Build your career with purpose in Lesotho</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Current Job Vacancies</h2>
+        <p>Explore opportunities across our divisions</p>
+      </div>
+      <div class="job-listings">
+        <!-- Job vacancy listings as unordered list style -->
+        <div class="job-item">
+          <div>
+            <div class="job-title">Human Resources Officer</div>
+            <div class="job-location"><i class="fas fa-map-marker-alt"></i> Maseru</div>
+          </div>
+          <a href="#" class="btn-small">Apply Now</a>
+        </div>
+        <div class="job-item">
+          <div>
+            <div class="job-title">IT Support Specialist</div>
+            <div class="job-location"><i class="fas fa-map-marker-alt"></i> Teyateyaneng</div>
+          </div>
+          <a href="#" class="btn-small">Apply Now</a>
+        </div>
+        <div class="job-item">
+          <div>
+            <div class="job-title">Finance Analyst</div>
+            <div class="job-location"><i class="fas fa-map-marker-alt"></i> Leribe</div>
+          </div>
+          <a href="#" class="btn-small">Apply Now</a>
+        </div>
+        <div class="job-item">
+          <div>
+            <div class="job-title">Community Development Coordinator</div>
+            <div class="job-location"><i class="fas fa-map-marker-alt"></i> Mokhotlong</div>
+          </div>
+          <a href="#" class="btn-small">Apply Now</a>
+        </div>
+        <div class="job-item">
+          <div>
+            <div class="job-title">Marketing & Communications Officer</div>
+            <div class="job-location"><i class="fas fa-map-marker-alt"></i> Maseru (hybrid)</div>
+          </div>
+          <a href="#" class="btn-small">Apply Now</a>
+        </div>
+      </div>
+      <div class="policy-card" style="margin-top:2rem;">
+        <i class="fas fa-envelope-open-text"></i>
+        <h3>Send us your CV</h3>
+        <p>Even if no current vacancy matches, we keep profiles for future opportunities.</p>
+        <a href="#" class="btn-small">careers@lesothohr.co.ls</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>HR Portal</h4>
+      <p>Supporting Lesotho’s workforce with transparency and growth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Job Vacancies</a></li>
+        <li><a href="training.html">HR Training Video</a></li>
+        <li><a href="policies.html">Internal Policies</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="policies.html#leave">Leave Policy</a></li>
+        <li><a href="policies.html#ethics">Code of Conduct</a></li>
+        <li><a href="policies.html#data">Data Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +266 62499625</p>
+      <p><i class="fas fa-envelope"></i> hr@lesothohr.co.ls</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2026 Moshoeshoe HR Holdings – Lesotho | Empowering Basotho excellence</p>
+  </div>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if(toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  }
+</script>
+</body>
+</html>

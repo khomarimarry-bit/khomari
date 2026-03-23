@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefcf5;
+  color: #1e2a2f;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+  background: #1f3b2c;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo i {
+  color: #f4c542;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  border-bottom-color: #f4c542;
+  color: #f4c542;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #f4c542;
+  color: #1f3b2c;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 40px;
+  display: inline-block;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #e0b034;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #1f3b2c;
+  color: #1f3b2c;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #1f3b2c;
+  color: white;
+}
+
+.btn-small {
+  background: #1f3b2c;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Hero */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.alt-bg {
+  background: #f0ede5;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #1f3b2c;
+  margin-bottom: 0.5rem;
+}
+
+/* Staff grid */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.staff-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+}
+
+.staff-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.staff-card h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.staff-card p {
+  color: #5e6b6b;
+}
+
+.location {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #f4c542;
+}
+
+/* Two columns */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.info-text h2 {
+  color: #1f3b2c;
+  margin-bottom: 1rem;
+}
+
+.custom-list {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.custom-list li {
+  margin: 0.5rem 0;
+}
+
+.custom-list i {
+  color: #f4c542;
+  margin-right: 0.7rem;
+}
+
+.info-image img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #6c757d;
+}
+
+/* Policy card */
+.policy-snippet {
+  background: #e7e2d4;
+}
+
+.policy-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.policy-card i {
+  font-size: 2.5rem;
+  color: #f4c542;
+  margin-bottom: 1rem;
+}
+
+/* Job listings */
+.job-listings {
+  margin-top: 2rem;
+}
+
+.job-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.job-location {
+  color: #f4c542;
+  font-size: 0.9rem;
+}
+
+/* Benefits cards */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: #f4c542;
+  margin-bottom: 1rem;
+}
+
+/* Video container */
+.video-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: #1f3b2c;
+  color: #ddd;
+  padding-top: 3rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+  color: #f4c542;
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #f4c542;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #2e4a3a;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1f3b2c;
+    padding: 1rem 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .job-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
